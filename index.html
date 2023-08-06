@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header part -->
+    <header class="header">
+        <a href="#" class="logo"><span>H</span>S</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, There! I'm</h3>
+            <h1>Helani Seekkubadu</h1>
+            <h3>And I'm <span class="multi-text"></span></h3>
+            <p>I am a Software Engineering Undergraduate, enthusiastic about embracing opportunities that foster personal and professional growth </p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100085344666860" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://www.linkedin.com/in/helani-seekkubadu-782832233/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://medium.com/@udarahseekku" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://github.com/HelaniUdara" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="images/res5.png" alt="My Photo">
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/res6.png" alt="My photo">
+        </div>
+        <div class="about-content">
+            <h2 class="topic">About <span>Me</span></h2>
+            <p>I am a motivated and dedicated undergraduate at the University of Kelaniya, specializing in Net-Centric Applications, Mobile Computing Applications, and Data Science. Possesses excellent time management, teamwork, and communication skills. A fast learner who thrives in dynamic environments and adapts quickly to new challenges and technologies. Hones critical thinking and problem-solving abilities, seeking to tackle real-world challenges and opportunities to combine theoretical knowledge with hands-on experience.</p>
+            <div class="dropdown-btns">
+                <div class="education">
+                    <button class="btn-dropdown" onclick="toggleEducation()">Education</button>
+                     <div class="education-content" id="education-content">
+                        <ul class="main-list">
+                            <li class="main-li">Universuty of Kelaniya
+                                <ul class="sub_list">
+                                    <li>BSc (Hons) in Software Engineering</li>
+                                    <li>Expected Graduation: July 2025</li>
+                                    <li>Current GPA : 4.0</li>
+                                </ul>
+                            </li>
+                            <li class="main-li">Anula Vidyalaya, Nugegoda
+                                <ul class="sub_list">
+                                    <li>G.C.E Advanced Level Examination - (2019)<br>
+                                    Obtained 1A and 2Bs' in the physical science stream</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="volunteering">
+                    <button class="btn-dropdown" onclick="toggleVolunteering()">Volunteering</button>
+                    <div class="volunteering-content" id="volunteering-content">
+                        <ul class="main-list">
+                            <li class="main-li">Vice Secratory (2022 - Present) 
+                                <ul class="sub_list">
+                                    <li>IEEE WIE affinity group of the University of Kelaniya</li>
+                                </ul>
+                            </li>
+                            <li class="main-li">Marketing Coordinator
+                                <ul class="sub_list">
+                                    <li>Project 'NaCl + H2O'<br>
+                                        Wildlife and Animal Conservation Avenue<br>
+                                        LEO club of University of Kelaniya</li>
+                                </ul>
+                            </li>
+                            <li class="main-li">Member (2021 October - Present) 
+                                <ul class="sub_list">
+                                    <li>IEEE Sri Lankan Section</li>
+                                </ul>
+                            </li>
+                            <li class="main-li">Member (2022 - 2023 March) 
+                                <ul class="sub_list">
+                                    <li>IEEE Computer Society</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="topic">My <span>Skills</span></h2>
+        <div class="skill-type">
+            <h2 class="skill-link active-link" onclick="opentab('tecnical')">Technical</h2>
+            <h2 class="skill-link" onclick="opentab('professional')">Professional</h2>
+        </div>
+        <div class="tecnical skill-content active_tab" id="tecnical">
+            <div class="container1">
+                <div class="skill-box">
+                    <span class="title">HTML</span>
+                    <div class="skill-bar">
+                        <span class="skill-per html">
+                            <span class="tooltip">95%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">CSS</span>
+                    <div class="skill-bar">
+                        <span class="skill-per css">
+                            <span class="tooltip">85%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Java</span>
+                    <div class="skill-bar">
+                        <span class="skill-per java">
+                            <span class="tooltip">70%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">JavaScript</span>
+                    <div class="skill-bar">
+                        <span class="skill-per javascript">
+                            <span class="tooltip">50%</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="skill-box">
+                    <span class="title">MySQL</span>
+                    <div class="skill-bar">
+                        <span class="skill-per mysql">
+                            <span class="tooltip">60%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">PHP</span>
+                    <div class="skill-bar">
+                        <span class="skill-per php">
+                            <span class="tooltip">50%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Python</span>
+                    <div class="skill-bar">
+                        <span class="skill-per python">
+                            <span class="tooltip">30%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">ReactJS</span>
+                    <div class="skill-bar">
+                        <span class="skill-per reactjs">
+                            <span class="tooltip">20%</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Professional -->
+        <div class="professional skill-content" id="professional">
+            <div class="container1">
+                <div class="skill-box">
+                    <span class="title">Teamwork</span>
+                    <div class="skill-bar">
+                        <span class="skill-per team">
+                            <span class="tooltip">95%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Leadership</span>
+                    <div class="skill-bar">
+                        <span class="skill-per leader">
+                            <span class="tooltip">85%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Communication</span>
+                    <div class="skill-bar">
+                        <span class="skill-per communication">
+                            <span class="tooltip">85%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Time Management</span>
+                    <div class="skill-bar">
+                        <span class="skill-per time">
+                            <span class="tooltip">90%</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="skill-box">
+                    <span class="title">Problem Solving</span>
+                    <div class="skill-bar">
+                        <span class="skill-per problem">
+                            <span class="tooltip">80%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Creativity</span>
+                    <div class="skill-bar">
+                        <span class="skill-per creativity">
+                            <span class="tooltip">90%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Designing</span>
+                    <div class="skill-bar">
+                        <span class="skill-per design">
+                            <span class="tooltip">90%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Emotional Intelligence</span>
+                    <div class="skill-bar">
+                        <span class="skill-per emotion">
+                            <span class="tooltip">80%</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Section -->
+    <section class="services" id="services">
+        <h2 class="topic">My <span>Services</span></h2>
+        <div class="service-container">
+            <div class="service-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Crafting visually appealing and user-friendly websites, blending creativity 
+                    with modern design trends to deliver engaging online experiences for clients 
+                    and their target audience.</p>
+                    <a href="#portfolio" class="btn">Explore</a>
+            </div>
+            <div class="service-box">
+                <i class="fa-brands fa-figma"></i>
+                    <h3>UI/UX Designing</h3>
+                    <p>Transforming complex concepts into intuitive interfaces through user research 
+                        and best practices, providing delightful digital experiences that keep users engaged and successful.</p>
+                    <a href="#" class="btn">Explore</a>
+            </div>
+            <div class="service-box">
+                <i class="fa-regular fa-newspaper"></i>
+                    <h3>Blog Writing</h3>
+                    <p>Passionate and skilled in crafting captivating blog content with in-depth research, 
+                        compelling headlines, and a unique storytelling flair, leaving a lasting impression and delivering value to readers.</p>
+                    <a href="https://medium.com/@udarahseekku" target="_blank" class="btn">Explore</a>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="topic">My <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/project3.png" alt="Project1">
+                <div class="portfolio-layer">
+                    <h4>Eplannet</h4>
+                    <p>This is full stack Ecommerce Web Application for a Electronics and Accessories Shop made using React Js, Spring Boot, JWT, and MySQL. I contributed for the front-end and you can see the front-end source code from below link.</p>
+                    <a href="https://github.com/HelaniUdara/EPlanet" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/project2.png" alt="Project1">
+                <div class="portfolio-layer">
+                    <h4>Electro</h4>
+                    <p>This is full stack Ecommerce Web Application for a Electronics and Accessories Shop made using HTML, CSS, JavaScript, PHP, and MySQL.</p>
+                    <a href="https://github.com/HelaniUdara/Electro" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/chinese.png" alt="Project1">
+                <div class="portfolio-layer">
+                    <h4>Web Exercise</h4>
+                    <p>This is a exercise activity did to practise Html and CSS.</p>
+                    <a href="https://github.com/HelaniUdara/WebExercise" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/bmi.png" alt="Project1">
+                <div class="portfolio-layer">
+                    <h4>Android Application</h4>
+                    <p>This is a BMI calculator I created using Android Studio to practice and get experience in Mobile App Development.</p>
+                    <a href="https://github.com/HelaniUdara/BMI_Calculator" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/cal.png" alt="Project1">
+                <div class="portfolio-layer">
+                    <h4>Android Application</h4>
+                    <p>This is a Simple calculator I created using Android Studio to as an assignment Mobile App Development.</p>
+                    <a href="https://github.com/HelaniUdara/Simple_Calculator" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/project3.png" alt="Project1">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>This is a home page design for a Electronics and Accessories Shop made using Html and CSS.</p>
+                    <a href="https://github.com/HelaniUdara/Webpage-Zerco-X-Online" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2 class="topic">Contact <span>Me!</span></h2>
+            <p>Thank you for taking the time to review my resume. Your consideration is greatly appreciated! Feel free to reach out to me for any inquiries or opportunities. <br>I look forward to hearing from you!</p>
+            <div class="contact-list">
+                <a href="mailto:udarahseekku@gmail.com"><i class="fa-solid fa-paper-plane"></i> udarahseekku@gmail.com</a>
+                <a href="tel:+94712212505"><i class="fa-solid fa-square-phone"></i> 0712212505</a>
+                <a href="https://www.linkedin.com/in/helani-seekkubadu-782832233/" target="_blank"><i class="fa-brands fa-linkedin"></i> Helani Seekkubadu</a>
+                <a href="https://medium.com/@udarahseekku" target="_blank"><i class="fa-brands fa-medium"></i>View My Blogs</a>
+            </div> 
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="contact-img">
+            <img src="images/res4.png" alt="">
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="footer-text">
+            <p>Copyright © 2023 Helani Seekkubadu | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Adding JS  -->
+    <script src="scripts.js"></script>
+</body>
+</html>
