@@ -51,7 +51,7 @@ ScrollReveal().reveal('.about-img, .home-content h1', {origin: 'left'});
 ScrollReveal().reveal('.about-content, .home-content p', {origin: 'right'});
 
 const typed = new Typed('.multi-text',{
-    strings: ["An UI/UX Designer.", "A Web Developer.", "A Blogger.", "An Artist"],
+    strings: ["An UI/UX Designer.", "A Web Developer.", "A Blogger."],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
