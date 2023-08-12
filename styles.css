@@ -13,7 +13,6 @@
 
 html{
     font-size: 62.5%;
-    /* overflow: hidden; */
 }
 
 body{
@@ -60,8 +59,7 @@ section{
 .navbar a:hover, .navbar a.active{
    color: #c9b9ff;
 }
-/* light--> #7956e8, #a795e3
-    dark --> #261460 */
+
 #menu-icon{
     font-size: 2.8rem;
     color: #fff;
@@ -173,11 +171,6 @@ span{
     font-size: 4.5rem;
 }
 
-/* .about-content h2{
-    text-align: left;
-    line-height: 1.2;
-} */
-
 .about-content p{
     font-size: 1.5rem;
     margin: 2rem 0 3rem;
@@ -185,8 +178,6 @@ span{
 }
 
 .dropdown-btns{
-    /* display: flex;
-    gap: 5rem; */
     justify-content: center;
 }
 
